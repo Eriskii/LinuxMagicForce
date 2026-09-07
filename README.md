@@ -102,7 +102,7 @@ For NixOS, prefer the module instead of manually installing the systemd unit:
 
 ```nix
 {
-  inputs.linuxMagicForce.url = "github:Isolyth/LinuxMagicForce";
+  inputs.linuxMagicForce.url = "github:Eriskii/LinuxMagicForce";
 
   outputs = { nixpkgs, linuxMagicForce, ... }: {
     nixosConfigurations.host = nixpkgs.lib.nixosSystem {

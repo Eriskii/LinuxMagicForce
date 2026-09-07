@@ -49,7 +49,7 @@
 
             meta = {
               description = "Userspace force-click and haptics daemon for Bluetooth Magic Trackpad 2";
-              homepage = "https://github.com/Isolyth/LinuxMagicForce";
+              homepage = "https://github.com/Eriskii/LinuxMagicForce";
               mainProgram = "force-touchd";
               platforms = lib.platforms.linux;
             };
@@ -152,7 +152,7 @@
           config = lib.mkIf cfg.enable {
             systemd.services.force-touchd = {
               description = "LinuxMagicForce Magic Trackpad 2 haptic daemon";
-              documentation = [ "https://github.com/Isolyth/LinuxMagicForce" ];
+              documentation = [ "https://github.com/Eriskii/LinuxMagicForce" ];
               after = [ "bluetooth.target" ];
               wants = [ "bluetooth.target" ];
               wantedBy = [ "multi-user.target" ];
